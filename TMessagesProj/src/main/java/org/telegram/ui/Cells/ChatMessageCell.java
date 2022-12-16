@@ -4019,9 +4019,17 @@ public class ChatMessageCell extends BaseCell implements SeekBar.SeekBarDelegate
             gamePreviewPressed = false;
             sideButtonPressed = false;
             hasNewLineForTime = false;
-            // todo advanced logic
+
             if (messageObject.isSticker()) {
-                flipImage = true;
+                boolean isCurrentUserMessage = messageObject.getSenderId() == UserConfig.getInstance(currentAccount).getClientUserId();
+                boolean interlocutorFlipped = MediaDataController.getInstance(currentAccount).isInterlocutorStickerFlipped(messageObject.getDocument());
+                boolean flipped = MediaDataController.getInstance(currentAccount).isStickerFlipped(messageObject.getDocument());
+                if (isCurrentUserMessage) {
+                    flipImage = flipped;
+                }
+                else {
+                    flipImage = flipped != interlocutorFlipped;
+                }
             }
             else {
                 flipImage = false;

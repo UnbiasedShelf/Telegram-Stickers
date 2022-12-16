@@ -772,6 +772,48 @@ public class MediaDataController extends BaseController {
         return false;
     }
 
+    public void changeStickerFlipState(TLRPC.Document document, boolean flip) {
+        if (document == null) {
+            return;
+        }
+        SharedPreferences sharedPreferences = ApplicationLoader.applicationContext
+                .getSharedPreferences("stickers_" + currentAccount, Activity.MODE_PRIVATE);
+        sharedPreferences
+                .edit()
+                .putBoolean(document.id + "_flipped", flip)
+                .apply();
+    }
+
+    public boolean isStickerFlipped(TLRPC.Document document) {
+        if (document == null) {
+            return false;
+        }
+        SharedPreferences sharedPreferences = ApplicationLoader.applicationContext
+                .getSharedPreferences("stickers_" + currentAccount, Activity.MODE_PRIVATE);
+        return sharedPreferences.getBoolean(document.id + "_flipped", false);
+    }
+
+    public void changeFlipInterlocutorStickerState(TLRPC.Document document, boolean flipInterlocutor) {
+        if (document == null) {
+            return;
+        }
+        SharedPreferences sharedPreferences = ApplicationLoader.applicationContext
+                .getSharedPreferences("stickers_" + currentAccount, Activity.MODE_PRIVATE);
+        sharedPreferences
+                .edit()
+                .putBoolean(document.id + "_interlocutorFlipped", flipInterlocutor)
+                .apply();
+    }
+
+    public boolean isInterlocutorStickerFlipped(TLRPC.Document document) {
+        if (document == null) {
+            return false;
+        }
+        SharedPreferences sharedPreferences = ApplicationLoader.applicationContext
+                .getSharedPreferences("stickers_" + currentAccount, Activity.MODE_PRIVATE);
+        return sharedPreferences.getBoolean(document.id + "_interlocutorFlipped", false);
+    }
+
     public void clearRecentStickers() {
         TLRPC.TL_messages_clearRecentStickers req = new TLRPC.TL_messages_clearRecentStickers();
         getConnectionsManager().sendRequest(req, (response, error) -> AndroidUtilities.runOnUIThread(() -> {

@@ -190,6 +190,8 @@ public class ContentPreviewViewer {
                     return;
                 }
                 final boolean inFavs = MediaDataController.getInstance(currentAccount).isStickerInFavorites(currentDocument);
+                final boolean interlocutorFlipped = MediaDataController.getInstance(currentAccount).isInterlocutorStickerFlipped(currentDocument);
+                final boolean flipped = MediaDataController.getInstance(currentAccount).isStickerFlipped(currentDocument);
                 ArrayList<CharSequence> items = new ArrayList<>();
                 final ArrayList<Integer> actions = new ArrayList<>();
                 ArrayList<Integer> icons = new ArrayList<>();
@@ -232,6 +234,16 @@ public class ContentPreviewViewer {
                     icons.add(R.drawable.msg_delete);
                     actions.add(4);
                 }
+
+                // todo res & different icons
+                items.add(interlocutorFlipped ? "Remove from Flipped All Except Mine" : "Add to Flipped All Except Mine");
+                icons.add(interlocutorFlipped ? R.drawable.msg_unfave : R.drawable.msg_fave);
+                actions.add(7);
+
+                items.add(flipped ? "Remove from Flipped All" : "Add to Flipped All");
+                icons.add(flipped ? R.drawable.msg_unfave : R.drawable.add);
+                actions.add(8);
+
                 if (items.isEmpty()) {
                     return;
                 }
@@ -265,6 +277,11 @@ public class ContentPreviewViewer {
                             AlertsCreator.createScheduleDatePickerDialog(parentActivity, stickerPreviewViewerDelegate.getDialogId(), (notify, scheduleDate) -> stickerPreviewViewerDelegate.sendSticker(sticker, query, parent, notify, scheduleDate));
                         } else if (actions.get(which) == 4) {
                             MediaDataController.getInstance(currentAccount).addRecentSticker(MediaDataController.TYPE_IMAGE, parentObject, currentDocument, (int) (System.currentTimeMillis() / 1000), true);
+                        } else if (actions.get(which) == 7) {
+                            MediaDataController.getInstance(currentAccount).changeFlipInterlocutorStickerState(currentDocument, !interlocutorFlipped);
+                        }
+                        else if (actions.get(which) == 8) {
+                            MediaDataController.getInstance(currentAccount).changeStickerFlipState(currentDocument, !flipped);
                         } else if (actions.get(which) == 5) {
                             delegate.remove(importingSticker);
                         }
