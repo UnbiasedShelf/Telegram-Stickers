@@ -1,3 +1,9 @@
+## Telegram Stickers
+Telegram app with advanced sticker flipping logic:
+- Added two extra options in the sticker's menu (appearing on long click on sticker) for sticker behavior configuration (user can select to flip only sticker sended by him, sticker sended by other user or all stickers)
+- Stickers configuration stored in shared preferences files, one file per account
+- To apply changes user should reopen chat
+
 ## Telegram messenger for Android
 
 [Telegram](https://telegram.org) is a messaging app with a focus on speed and security. It’s superfast, simple and free.
