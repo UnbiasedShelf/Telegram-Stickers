@@ -1,8 +1,17 @@
 ## Telegram Stickers
+[Original Readme](https://github.com/UnbiasedShelf/Telegram-Stickers#telegram-messenger-for-android)
+
 Telegram app with advanced sticker flipping logic:
 - Added two extra options in the sticker's menu (appearing on long click on sticker) for sticker behavior configuration (user can select to flip only sticker sended by him, sticker sended by other user or all stickers)
 - Stickers configuration stored in shared preferences files, one file per account
 - To apply changes user should reopen chat
+
+## Screenshots
+!(screenshot)[https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162012_Telegram%20Stickers%20Flipper.jpg]
+!(screenshot)[https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162023_Telegram%20Stickers%20Flipper.jpg]
+!(screenshot)[https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162040_Telegram%20Stickers%20Flipper.jpg]
+!(screenshot)[https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162106_Telegram%20Stickers%20Flipper.jpg]
+!(screenshot)[https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162116_Telegram%20Stickers%20Flipper.jpg]
 
 ## Telegram messenger for Android
 
