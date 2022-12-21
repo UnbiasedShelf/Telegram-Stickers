@@ -235,13 +235,12 @@ public class ContentPreviewViewer {
                     actions.add(4);
                 }
 
-                // todo res & different icons
-                items.add(interlocutorFlipped ? "Remove from Flipped All Except Mine" : "Add to Flipped All Except Mine");
-                icons.add(interlocutorFlipped ? R.drawable.msg_unfave : R.drawable.msg_fave);
+                items.add(interlocutorFlipped ? LocaleController.getString("RemoveFromFlippedAllExceptMine", R.string.RemoveFromFlippedAllExceptMine) : LocaleController.getString("AddToFlippedAllExceptMine", R.string.AddToFlippedAllExceptMine));
+                icons.add(interlocutorFlipped ? R.drawable.msg_removefolder : R.drawable.msg_addfolder);
                 actions.add(7);
 
-                items.add(flipped ? "Remove from Flipped All" : "Add to Flipped All");
-                icons.add(flipped ? R.drawable.msg_unfave : R.drawable.add);
+                items.add(flipped ? LocaleController.getString("RemoveFromFlippedAll", R.string.RemoveFromFlippedAll) : LocaleController.getString("AddToFlippedAll", R.string.AddToFlippedAll));
+                icons.add(flipped ? R.drawable.msg_removefolder : R.drawable.msg_addfolder);
                 actions.add(8);
 
                 if (items.isEmpty()) {

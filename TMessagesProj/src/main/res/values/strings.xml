@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="AppName">Telegram</string>
-    <string name="AppNameBeta">Telegram Beta</string>
+    <string name="AppName">Telegram Stickers Flipper</string>
+    <string name="AppNameBeta">Telegram Stickers Flipper Beta</string>
     <string name="LanguageName">English</string>
     <string name="English">English</string>
     <string name="LanguageNameInEnglish">English</string>
@@ -1754,6 +1754,10 @@
     <string name="DeleteFromFavorites">Delete from Favorites</string>
     <string name="DeleteFromRecent">Delete from Recent</string>
     <string name="ClearRecentStickersAlertTitle">Clear recent stickers</string>
+    <string name="RemoveFromFlippedAllExceptMine">Remove from Flipped All Except Mine</string>
+    <string name="AddToFlippedAllExceptMine">Add to Flipped All Except Mine</string>
+    <string name="RemoveFromFlippedAll">Remove from Flipped All</string>
+    <string name="AddToFlippedAll">Add to Flipped All</string>
     <string name="AddToMasks">Add to Masks</string>
     <string name="AddStickersNotFound">Stickers not found</string>
     <string name="AddEmojiNotFound">Emoji pack not found.</string>
