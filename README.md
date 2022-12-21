@@ -7,11 +7,11 @@ Telegram app with advanced sticker flipping logic:
 - To apply changes user should reopen chat
 
 ## Screenshots
-!(screenshot)[https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162012_Telegram%20Stickers%20Flipper.jpg]
-!(screenshot)[https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162023_Telegram%20Stickers%20Flipper.jpg]
-!(screenshot)[https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162040_Telegram%20Stickers%20Flipper.jpg]
-!(screenshot)[https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162106_Telegram%20Stickers%20Flipper.jpg]
-!(screenshot)[https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162116_Telegram%20Stickers%20Flipper.jpg]
+![screenshot](https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162012_Telegram%20Stickers%20Flipper.jpg)
+![screenshot](https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162023_Telegram%20Stickers%20Flipper.jpg)
+![screenshot](https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162040_Telegram%20Stickers%20Flipper.jpg)
+![screenshot](https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162106_Telegram%20Stickers%20Flipper.jpg)
+![screenshot](https://github.com/UnbiasedShelf/Telegram-Stickers/blob/master/screenshots/Screenshot_20221221_162116_Telegram%20Stickers%20Flipper.jpg)
 
 ## Telegram messenger for Android
 
